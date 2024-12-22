@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Madimi+One&family=Ojuju:wght@200..800&display=swap');
+
+/* Set up base styles */
+.home-page,
+.content-page {
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-page h2 {
+  color: white;
+}
+
+.content-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/fr.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-page {
+  text-align: start;
+  position: relative;
+  top: 50px;
+  text-align: justify;
+  animation: fadeIn 3s ease;
+  font-family: "Arvo";
+}
+
+.img-container {
+  margin-top: 100px;
+  animation: imgfade 3s ease;
+}
+
+.main-page button {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #0581bb;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.main-page .btn-app:hover {
+  background-color: #0581bb;
+}
+
+/* Text animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Img animation */
+@keyframes imgfade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+/* Fonts */
+.main-page h2 {
+  font-family: "Madimi One", sans-serif;
+  font-size: 4rem; /* Initial font size */
+  margin: 0;
+  padding: 10px;
+  color: black; /* Text color */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .main-page h2 {
+    font-size: 2em; /* Adjust font size for smaller screens */
+  }
+}

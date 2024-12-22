@@ -1,0 +1,67 @@
+/* Edit.css */
+
+.edit-post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 20px auto;
+}
+
+.edit-title {
+  /* Add styles for the edit title */
+  margin-bottom: 20px;
+  color: black;
+}
+
+.edit-form {
+  /* Add styles for the form */
+  width: 100%;
+}
+
+.edit-form label {
+  /* Add styles for the form labels */
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.edit-form input,
+.edit-form select,
+.edit-form textarea {
+  /* Add styles for the input fields and textarea */
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.edit-form textarea {
+  /* Add styles for the textarea */
+  height: 100px;
+}
+
+.edit-submit-btn {
+  /* Add styles for the submit button */
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-submit-btn:hover {
+  /* Add styles for the button on hover */
+  background-color: #2980b9;
+}

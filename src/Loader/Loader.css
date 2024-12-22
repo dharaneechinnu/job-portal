@@ -1,0 +1,29 @@
+.img {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(184, 184, 213);
+  }
+  .img img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255)); /* Adjust values as needed */
+    animation: zoomin 2s ease-in-out infinite alternate;
+}
+
+
+
+  
+
+@keyframes zoomin {
+    0%{
+      transform: scale(1.1);
+    }
+    100%{
+      transform: scale(1.0);
+    }
+  }

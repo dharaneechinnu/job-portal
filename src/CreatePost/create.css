@@ -1,0 +1,57 @@
+/* Your CSS file, e.g., NewPost.css */
+
+.NewPost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Set a width for the box */
+    margin: 20px auto; /* Center the box horizontally and add space at the top and bottom */
+  }
+  
+  .newPostForm {
+    width: 100%;
+  }
+  
+  .newPostForm label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .newPostForm input,
+  .newPostForm textarea, 
+  .newPostForm select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  .newPostForm textarea {
+    height: 100px;
+  }
+  
+  .newPostForm button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sumbitbtn:hover {
+    background-color: #2980b9;
+  }
+  

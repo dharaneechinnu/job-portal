@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Madimi+One&family=Ojuju:wght@200..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: "Arvo", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+        font-size: 14px; /* Decrease font size for better readability on smaller screens */
+    }
+}

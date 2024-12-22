@@ -1,0 +1,153 @@
+/* AlPost.css */
+
+.center {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.all-post {
+  position: relative;
+  top: 20%;
+}
+
+.search-label {
+  font-size: 18px;
+  color: #ff69b4; 
+  margin-right: 10px;
+}
+
+.pic {
+  animation: Allpostfade 3s ease;
+}
+
+.pic h2 {
+  position: relative;
+  top: 5%;
+  left: 25%;
+  font-size: 50px;
+}
+
+.pic span {
+  font-size: 100px;
+  color: rgb(9, 113, 192);
+}
+
+.search-input {
+  width: 100%; 
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #010101; 
+  outline: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.all {
+  animation: box 3s ease;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Center items on the container */
+  padding: 20px;
+}
+
+.post-items {
+  cursor: pointer;
+  margin-top: 30px;
+  flex: 1 1 calc(25% - 20px); /* Improved responsiveness for post items */
+  max-width: 300px; /* Set a maximum width for post items */
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Improved margin at the bottom of each post item */
+  transition: 0.3s ease-in-out;
+}
+
+.titles {
+  font-size: 24px;
+  color: #010101; /* Black color, you can change it */
+}
+
+.location {
+  font-size: 18px;
+  color: #365486; /* Blue color, you can change it */
+  margin-top: 10px;
+}
+
+.bodys {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.mails,
+.numbessr,
+.timess {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.numbessr,
+.timess {
+  position: relative;
+  top: 5%;
+}
+
+.timess {
+  margin-top: 5px;
+  left: 0;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .search-input {
+    width: auto; /* Auto width on larger screens */
+  }
+}
+
+.back-arrow {
+  position: absolute;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: white;
+  color: #010101;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+}
+.post-items .mails a{
+  display: flex;
+  flex-wrap: wrap;
+}
+.back-arrow:hover {
+  background-color: white;
+  color: black;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #ff4385; /* A darker shade of Hot Pink, you can change it */
+}
+
+@keyframes Allpostfade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes box {
+  from {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.0);
+  }
+}
