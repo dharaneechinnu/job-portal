@@ -12,13 +12,6 @@ const Reg = () => {
   const [name, setName] = useState('')
   const [otpGenerated, setOtpGenerated] = useState(false);
   const [isVerified, setIsVerified] = useState(false);
-  const [passwordStrength, setPasswordStrength] = useState({
-    length: false,
-    uppercase: false,
-    lowercase: false,
-    number: false,
-    specialChar: false
-  });
 
   const history = useNavigate()
 
@@ -53,24 +46,6 @@ const Reg = () => {
   const handlePasswordChange = (e) => {
     const password = e.target.value;
     setPassword(password);
-    // Password strength validation
-    const isLengthValid = password.length >= 8;
-    const isUppercase = /[A-Z]/.test(password);
-    const isLowercase = /[a-z]/.test(password);
-    const isNumber = /[0-9]/.test(password);
-    const isSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
-
-    setPasswordStrength({
-      length: isLengthValid,
-      uppercase: isUppercase,
-      lowercase: isLowercase,
-      number: isNumber,
-      specialChar: isSpecialChar
-    });
-
-    if (!isLengthValid && !isUppercase && !isLowercase && !isNumber &&!isSpecialChar) {
-          toast.error("Enter Strong Password")
-    }
   };
 
   const handleSign = async (e) => {
@@ -143,7 +118,7 @@ const Reg = () => {
                 required
               />
             </div>
-            <button type="submit" className='submit' disabled={!isVerified || !Object.values(passwordStrength).every(val => val)}>
+            <button type="submit" className='submit' disabled={!isVerified}>
               Register
             </button>
           </form><br></br>
